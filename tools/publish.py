@@ -79,9 +79,8 @@ if not ph.get("certificate_id"):
     print("NPM: requesting certificate (DNS must already point here; can take ~30s)...")
     cert = npm("POST", "/nginx/certificates", {
         "provider": "letsencrypt", "domain_names": [HOST],
-        "meta": {"letsencrypt_email": le_email, "letsencrypt_agree": True, "dns_challenge": False}})
+        "meta": {"letsencrypt_email": le_email, "letsencrypt_agree": True}})
     npm("PUT", f"/nginx/proxy-hosts/{ph['id']}", {
-        **base, "certificate_id": cert["id"], "ssl_forced": True, "http2_support": True, "hsts_enabled": False,
-        "meta": {"letsencrypt_agree": True, "dns_challenge": False}})
+        **base, "certificate_id": cert["id"], "ssl_forced": True, "http2_support": True, "hsts_enabled": False})
     print("NPM: certificate attached, Force SSL on")
 print("Done: https://" + HOST)
