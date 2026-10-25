@@ -21,8 +21,8 @@ fi
 if [ "$changed" = 1 ] || [ "${1:-}" = "-f" ]; then
   python3 tools/gen_catalog.py
   go_env=(env HOME=/root GOCACHE=/root/.cache/go-build CGO_ENABLED=0)
-  "${go_env[@]}" GOOS=windows GOARCH=amd64 go build -ldflags "-s -w" -o /opt/appgrabber/dist/appgrabber-stub.exe.new ./stub
-  "${go_env[@]}" go build -ldflags "-s -w" -o /opt/appgrabber/appgrabber-server.new ./server
+  "${go_env[@]}" GOOS=windows GOARCH=amd64 go build -buildvcs=false -ldflags "-s -w" -o /opt/appgrabber/dist/appgrabber-stub.exe.new ./stub
+  "${go_env[@]}" go build -buildvcs=false -ldflags "-s -w" -o /opt/appgrabber/appgrabber-server.new ./server
   mv /opt/appgrabber/dist/appgrabber-stub.exe.new /opt/appgrabber/dist/appgrabber-stub.exe
   mv /opt/appgrabber/appgrabber-server.new /opt/appgrabber/appgrabber-server
   rm -rf /opt/appgrabber/public.new && cp -r public /opt/appgrabber/public.new

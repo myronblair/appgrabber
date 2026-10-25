@@ -13,8 +13,8 @@ python3 tools/gen_catalog.py
 cp -r public /opt/appgrabber/
 
 # real Windows .exe (cross-compiled) and the Linux server
-GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags "-s -w" -o /opt/appgrabber/dist/appgrabber-stub.exe ./stub
-CGO_ENABLED=0 go build -ldflags "-s -w" -o /opt/appgrabber/appgrabber-server ./server
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -buildvcs=false -ldflags "-s -w" -o /opt/appgrabber/dist/appgrabber-stub.exe ./stub
+CGO_ENABLED=0 go build -buildvcs=false -ldflags "-s -w" -o /opt/appgrabber/appgrabber-server ./server
 
 chown -R root:root /opt/appgrabber
 install -m 644 deploy/appgrabber.service /etc/systemd/system/appgrabber.service
