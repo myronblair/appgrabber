@@ -75,11 +75,10 @@ else:
     print("NPM: created proxy host")
 
 if not ph.get("certificate_id"):
-    le_email = input("Email for Let's Encrypt notices [%s]: " % email).strip() or email
     print("NPM: requesting certificate (DNS must already point here; can take ~30s)...")
     cert = npm("POST", "/nginx/certificates", {
         "provider": "letsencrypt", "domain_names": [HOST],
-        "meta": {"letsencrypt_email": le_email, "letsencrypt_agree": True}})
+        "meta": {"dns_challenge": False}})
     npm("PUT", f"/nginx/proxy-hosts/{ph['id']}", {
         **base, "certificate_id": cert["id"], "ssl_forced": True, "http2_support": True, "hsts_enabled": False})
     print("NPM: certificate attached, Force SSL on")
