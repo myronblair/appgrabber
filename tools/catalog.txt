@@ -1,0 +1,127 @@
+# category|name|winget id|description
+Web Browsers|Chrome|Google.Chrome|Google's fast browser
+Web Browsers|Firefox|Mozilla.Firefox|Open-source browser
+Web Browsers|Microsoft Edge|Microsoft.Edge|Chromium-based Edge
+Web Browsers|Brave|Brave.Brave|Privacy-focused browser
+Web Browsers|Opera|Opera.Opera|Browser with built-in VPN
+Web Browsers|Vivaldi|Vivaldi.Vivaldi|Highly customizable browser
+Messaging & Meetings|Zoom|Zoom.Zoom|Video meetings
+Messaging & Meetings|Microsoft Teams|Microsoft.Teams|Chat and meetings
+Messaging & Meetings|Slack|SlackTechnologies.Slack|Team chat
+Messaging & Meetings|Discord|Discord.Discord|Voice and text chat
+Messaging & Meetings|Telegram|Telegram.TelegramDesktop|Messaging
+Messaging & Meetings|Signal|OpenWhisperSystems.Signal|Private messaging
+Messaging & Meetings|Thunderbird|Mozilla.Thunderbird|Email client
+Messaging & Meetings|Pidgin|Pidgin.Pidgin|Multi-protocol chat
+Media|VLC|VideoLAN.VLC|Plays almost anything
+Media|Spotify|Spotify.Spotify|Music streaming
+Media|iTunes|Apple.iTunes|Apple media and device sync
+Media|Audacity|Audacity.Audacity|Audio editor
+Media|foobar2000|PeterPawlowski.foobar2000|Audio player
+Media|AIMP|AIMP.AIMP|Audio player
+Media|HandBrake|HandBrake.HandBrake|Video transcoder
+Media|OBS Studio|OBSProject.OBSStudio|Recording and streaming
+Media|Kodi|XBMCFoundation.Kodi|Media center
+Media|K-Lite Codec Pack|CodecGuide.K-LiteCodecPack.Standard|Codecs and Media Player Classic
+Imaging|GIMP|GIMP.GIMP|Image editor
+Imaging|Inkscape|Inkscape.Inkscape|Vector graphics
+Imaging|Krita|KDE.Krita|Digital painting
+Imaging|Paint.NET|dotPDN.PaintDotNet|Simple image editor
+Imaging|IrfanView|IrfanSkiljan.IrfanView|Fast image viewer
+Imaging|Greenshot|Greenshot.Greenshot|Screenshots
+Imaging|ShareX|ShareX.ShareX|Screen capture and sharing
+Imaging|Blender|BlenderFoundation.Blender|3D creation suite
+Documents|Adobe Reader|Adobe.Acrobat.Reader.64-bit|PDF viewer
+Documents|Foxit Reader|Foxit.FoxitReader|Lightweight PDF reader
+Documents|SumatraPDF|SumatraPDF.SumatraPDF|Minimal PDF reader
+Documents|LibreOffice|TheDocumentFoundation.LibreOffice|Free office suite
+Documents|Apache OpenOffice|Apache.OpenOffice|Office suite
+Documents|Notepad++|Notepad++.Notepad++|Code and text editor
+Documents|Calibre|calibre.calibre|E-book manager
+Documents|Evernote|Evernote.Evernote|Notes
+Security|Malwarebytes|Malwarebytes.Malwarebytes|Malware scanner
+Security|Bitwarden|Bitwarden.Bitwarden|Password manager
+Security|KeePassXC|KeePassXCTeam.KeePassXC|Offline password manager
+Security|KeePass|DominikReichl.KeePass|Classic password manager
+Security|Wireshark|WiresharkFoundation.Wireshark|Packet analyzer
+Security|Nmap|Insecure.Nmap|Network scanner
+Security|Cloudflare WARP|Cloudflare.Warp|Secure DNS and VPN client
+Online Storage & Sync|Dropbox|Dropbox.Dropbox|Cloud storage
+Online Storage & Sync|Google Drive|Google.GoogleDrive|Cloud storage
+Online Storage & Sync|OneDrive|Microsoft.OneDrive|Microsoft cloud storage
+Online Storage & Sync|Box Drive|Box.Box|Cloud storage
+Online Storage & Sync|Nextcloud|Nextcloud.NextcloudDesktop|Self-hosted sync client
+Online Storage & Sync|MEGAsync|Mega.MEGASync|Cloud storage
+Online Storage & Sync|Syncthing|Syncthing.Syncthing|Peer-to-peer sync
+Compression|7-Zip|7zip.7zip|Archive manager
+Compression|WinRAR|RARLab.WinRAR|Archive manager
+Compression|PeaZip|Giorgiotani.Peazip|Archive manager
+Runtimes|Java (Temurin 21 JRE)|EclipseAdoptium.Temurin.21.JRE|Java runtime
+Runtimes|Java (Temurin 17 JRE)|EclipseAdoptium.Temurin.17.JRE|Java runtime
+Runtimes|.NET Desktop Runtime 8|Microsoft.DotNet.DesktopRuntime.8|.NET apps
+Runtimes|.NET Runtime 8|Microsoft.DotNet.Runtime.8|.NET console apps
+Runtimes|ASP.NET Core Runtime 8|Microsoft.DotNet.AspNetCore.8|Web hosting runtime
+Runtimes|VC++ Redistributable 2015-2022 x64|Microsoft.VCRedist.2015+.x64|C++ runtime
+Runtimes|VC++ Redistributable 2015-2022 x86|Microsoft.VCRedist.2015+.x86|C++ runtime
+Runtimes|WebView2 Runtime|Microsoft.EdgeWebView2Runtime|Embedded web content
+Runtimes|Python 3.12|Python.Python.3.12|Python runtime
+Runtimes|Node.js LTS|OpenJS.NodeJS.LTS|JavaScript runtime
+Developer Tools|Git|Git.Git|Source control
+Developer Tools|GitHub Desktop|GitHub.GitHubDesktop|Git GUI
+Developer Tools|Visual Studio Code|Microsoft.VisualStudioCode|Code editor
+Developer Tools|Windows Terminal|Microsoft.WindowsTerminal|Modern terminal
+Developer Tools|PowerShell 7|Microsoft.PowerShell|Cross-platform PowerShell
+Developer Tools|Postman|Postman.Postman|API client
+Developer Tools|Docker Desktop|Docker.DockerDesktop|Containers
+Developer Tools|WinMerge|WinMerge.WinMerge|Diff and merge
+Developer Tools|PuTTY|PuTTY.PuTTY|SSH and telnet client
+Developer Tools|WinSCP|WinSCP.WinSCP|SFTP and SCP client
+Developer Tools|Windows Subsystem for Linux|Microsoft.WSL|Run Linux on Windows
+Utilities|PowerToys|Microsoft.PowerToys|Windows power tools
+Utilities|Everything|voidtools.Everything|Instant file search
+Utilities|TreeSize Free|JAMSoftware.TreeSize.Free|Disk usage
+Utilities|WinDirStat|WinDirStat.WinDirStat|Disk usage
+Utilities|Revo Uninstaller|RevoUninstaller.RevoUninstaller|Thorough uninstaller
+Utilities|BleachBit|BleachBit.BleachBit|Disk cleaner
+Utilities|Ditto|Ditto.Ditto|Clipboard manager
+Utilities|AutoHotkey|AutoHotkey.AutoHotkey|Automation scripting
+Utilities|Open-Shell|Open-Shell.Open-Shell-Menu|Classic Start menu
+Utilities|Rufus|Rufus.Rufus|Bootable USB creator
+Utilities|Balena Etcher|Balena.Etcher|Flash images to USB
+Utilities|Ventoy|Ventoy.Ventoy|Multi-boot USB
+Hardware & Diagnostics|CPU-Z|CPUID.CPU-Z|CPU and board info
+Hardware & Diagnostics|HWMonitor|CPUID.HWMonitor|Temperatures and voltages
+Hardware & Diagnostics|HWiNFO|REALiX.HWiNFO|Detailed hardware info
+Hardware & Diagnostics|GPU-Z|TechPowerUp.GPU-Z|Graphics card info
+Hardware & Diagnostics|CrystalDiskInfo|CrystalDewWorld.CrystalDiskInfo|Drive health
+Hardware & Diagnostics|CrystalDiskMark|CrystalDewWorld.CrystalDiskMark|Drive benchmark
+Hardware & Diagnostics|Intel Driver & Support Assistant|Intel.IntelDriverAndSupportAssistant|Intel driver updates
+Hardware & Diagnostics|Dell Command Update|Dell.CommandUpdate|Dell driver updates
+Hardware & Diagnostics|Lenovo System Update|Lenovo.SystemUpdate|Lenovo driver updates
+Hardware & Diagnostics|Logitech Options+|Logitech.OptionsPlus|Logitech devices
+Remote Support|AnyDesk|AnyDesk.AnyDesk|Remote desktop
+Remote Support|TeamViewer|TeamViewer.TeamViewer|Remote desktop
+Remote Support|Microsoft Remote Desktop|Microsoft.RemoteDesktopClient|RDP client
+Remote Support|mRemoteNG|mRemoteNG.mRemoteNG|Multi-protocol remote manager
+Remote Support|Tailscale|Tailscale.Tailscale|Mesh VPN
+Remote Support|ZeroTier|ZeroTier.ZeroTierOne|Virtual network
+Remote Support|WireGuard|WireGuard.WireGuard|VPN
+Remote Support|OpenVPN|OpenVPNTechnologies.OpenVPN|VPN client
+Network Tools|Advanced IP Scanner|Famatech.AdvancedIPScanner|LAN scanner
+Network Tools|Angry IP Scanner|angryziber.AngryIPScanner|Fast IP scanner
+Network Tools|Wireshark|WiresharkFoundation.Wireshark|Packet analyzer
+Network Tools|Nmap|Insecure.Nmap|Network scanner
+Network Tools|Fing|Fing.Fing|Network discovery
+Server & Admin|Windows Admin Center|Microsoft.WindowsAdminCenter|Browser-based server admin
+Server & Admin|SQL Server Management Studio|Microsoft.SQLServerManagementStudio|SQL admin
+Server & Admin|Azure CLI|Microsoft.AzureCLI|Azure command line
+Server & Admin|Azure Storage Explorer|Microsoft.Azure.StorageExplorer|Azure storage browser
+Server & Admin|VirtualBox|Oracle.VirtualBox|Virtualization
+Server & Admin|Sysinternals Suite|Microsoft.Sysinternals.Suite|Microsoft diagnostics tools
+Server & Admin|Rclone|Rclone.Rclone|Cloud file sync CLI
+Server & Admin|Duplicati|Duplicati.Duplicati|Encrypted backups
+Server & Admin|mRemoteNG|mRemoteNG.mRemoteNG|Remote connection manager
+Gaming|Steam|Valve.Steam|Game store
+Gaming|Epic Games Launcher|EpicGames.EpicGamesLauncher|Game store
+Gaming|GOG Galaxy|GOG.Galaxy|Game library
+Microsoft 365|Microsoft 365 Apps|Microsoft.Office|Word, Excel, Outlook and more

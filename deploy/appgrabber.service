@@ -1,0 +1,16 @@
+[Unit]
+Description=AppGrabber installer builder
+After=network.target
+
+[Service]
+User=appgrabber
+WorkingDirectory=/opt/appgrabber
+ExecStart=/opt/appgrabber/appgrabber-server -listen 0.0.0.0:8090 -public /opt/appgrabber/public -stub /opt/appgrabber/dist/appgrabber-stub.exe
+Restart=always
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

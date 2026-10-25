@@ -1,0 +1,996 @@
+{
+ "categories": [
+  "Web Browsers",
+  "Messaging & Meetings",
+  "Media",
+  "Imaging",
+  "Documents",
+  "Security",
+  "Online Storage & Sync",
+  "Compression",
+  "Runtimes",
+  "Developer Tools",
+  "Utilities",
+  "Hardware & Diagnostics",
+  "Remote Support",
+  "Network Tools",
+  "Server & Admin",
+  "Gaming",
+  "Microsoft 365"
+ ],
+ "apps": [
+  {
+   "id": "chrome",
+   "name": "Chrome",
+   "cat": "Web Browsers",
+   "desc": "Google's fast browser",
+   "winget": "Google.Chrome"
+  },
+  {
+   "id": "firefox",
+   "name": "Firefox",
+   "cat": "Web Browsers",
+   "desc": "Open-source browser",
+   "winget": "Mozilla.Firefox"
+  },
+  {
+   "id": "microsoft-edge",
+   "name": "Microsoft Edge",
+   "cat": "Web Browsers",
+   "desc": "Chromium-based Edge",
+   "winget": "Microsoft.Edge"
+  },
+  {
+   "id": "brave",
+   "name": "Brave",
+   "cat": "Web Browsers",
+   "desc": "Privacy-focused browser",
+   "winget": "Brave.Brave"
+  },
+  {
+   "id": "opera",
+   "name": "Opera",
+   "cat": "Web Browsers",
+   "desc": "Browser with built-in VPN",
+   "winget": "Opera.Opera"
+  },
+  {
+   "id": "vivaldi",
+   "name": "Vivaldi",
+   "cat": "Web Browsers",
+   "desc": "Highly customizable browser",
+   "winget": "Vivaldi.Vivaldi"
+  },
+  {
+   "id": "zoom",
+   "name": "Zoom",
+   "cat": "Messaging & Meetings",
+   "desc": "Video meetings",
+   "winget": "Zoom.Zoom"
+  },
+  {
+   "id": "microsoft-teams",
+   "name": "Microsoft Teams",
+   "cat": "Messaging & Meetings",
+   "desc": "Chat and meetings",
+   "winget": "Microsoft.Teams"
+  },
+  {
+   "id": "slack",
+   "name": "Slack",
+   "cat": "Messaging & Meetings",
+   "desc": "Team chat",
+   "winget": "SlackTechnologies.Slack"
+  },
+  {
+   "id": "discord",
+   "name": "Discord",
+   "cat": "Messaging & Meetings",
+   "desc": "Voice and text chat",
+   "winget": "Discord.Discord"
+  },
+  {
+   "id": "telegram",
+   "name": "Telegram",
+   "cat": "Messaging & Meetings",
+   "desc": "Messaging",
+   "winget": "Telegram.TelegramDesktop"
+  },
+  {
+   "id": "signal",
+   "name": "Signal",
+   "cat": "Messaging & Meetings",
+   "desc": "Private messaging",
+   "winget": "OpenWhisperSystems.Signal"
+  },
+  {
+   "id": "thunderbird",
+   "name": "Thunderbird",
+   "cat": "Messaging & Meetings",
+   "desc": "Email client",
+   "winget": "Mozilla.Thunderbird"
+  },
+  {
+   "id": "pidgin",
+   "name": "Pidgin",
+   "cat": "Messaging & Meetings",
+   "desc": "Multi-protocol chat",
+   "winget": "Pidgin.Pidgin"
+  },
+  {
+   "id": "vlc",
+   "name": "VLC",
+   "cat": "Media",
+   "desc": "Plays almost anything",
+   "winget": "VideoLAN.VLC"
+  },
+  {
+   "id": "spotify",
+   "name": "Spotify",
+   "cat": "Media",
+   "desc": "Music streaming",
+   "winget": "Spotify.Spotify"
+  },
+  {
+   "id": "itunes",
+   "name": "iTunes",
+   "cat": "Media",
+   "desc": "Apple media and device sync",
+   "winget": "Apple.iTunes"
+  },
+  {
+   "id": "audacity",
+   "name": "Audacity",
+   "cat": "Media",
+   "desc": "Audio editor",
+   "winget": "Audacity.Audacity"
+  },
+  {
+   "id": "foobar2000",
+   "name": "foobar2000",
+   "cat": "Media",
+   "desc": "Audio player",
+   "winget": "PeterPawlowski.foobar2000"
+  },
+  {
+   "id": "aimp",
+   "name": "AIMP",
+   "cat": "Media",
+   "desc": "Audio player",
+   "winget": "AIMP.AIMP"
+  },
+  {
+   "id": "handbrake",
+   "name": "HandBrake",
+   "cat": "Media",
+   "desc": "Video transcoder",
+   "winget": "HandBrake.HandBrake"
+  },
+  {
+   "id": "obs-studio",
+   "name": "OBS Studio",
+   "cat": "Media",
+   "desc": "Recording and streaming",
+   "winget": "OBSProject.OBSStudio"
+  },
+  {
+   "id": "kodi",
+   "name": "Kodi",
+   "cat": "Media",
+   "desc": "Media center",
+   "winget": "XBMCFoundation.Kodi"
+  },
+  {
+   "id": "k-lite-codec-pack",
+   "name": "K-Lite Codec Pack",
+   "cat": "Media",
+   "desc": "Codecs and Media Player Classic",
+   "winget": "CodecGuide.K-LiteCodecPack.Standard"
+  },
+  {
+   "id": "gimp",
+   "name": "GIMP",
+   "cat": "Imaging",
+   "desc": "Image editor",
+   "winget": "GIMP.GIMP"
+  },
+  {
+   "id": "inkscape",
+   "name": "Inkscape",
+   "cat": "Imaging",
+   "desc": "Vector graphics",
+   "winget": "Inkscape.Inkscape"
+  },
+  {
+   "id": "krita",
+   "name": "Krita",
+   "cat": "Imaging",
+   "desc": "Digital painting",
+   "winget": "KDE.Krita"
+  },
+  {
+   "id": "paint-net",
+   "name": "Paint.NET",
+   "cat": "Imaging",
+   "desc": "Simple image editor",
+   "winget": "dotPDN.PaintDotNet"
+  },
+  {
+   "id": "irfanview",
+   "name": "IrfanView",
+   "cat": "Imaging",
+   "desc": "Fast image viewer",
+   "winget": "IrfanSkiljan.IrfanView"
+  },
+  {
+   "id": "greenshot",
+   "name": "Greenshot",
+   "cat": "Imaging",
+   "desc": "Screenshots",
+   "winget": "Greenshot.Greenshot"
+  },
+  {
+   "id": "sharex",
+   "name": "ShareX",
+   "cat": "Imaging",
+   "desc": "Screen capture and sharing",
+   "winget": "ShareX.ShareX"
+  },
+  {
+   "id": "blender",
+   "name": "Blender",
+   "cat": "Imaging",
+   "desc": "3D creation suite",
+   "winget": "BlenderFoundation.Blender"
+  },
+  {
+   "id": "adobe-reader",
+   "name": "Adobe Reader",
+   "cat": "Documents",
+   "desc": "PDF viewer",
+   "winget": "Adobe.Acrobat.Reader.64-bit"
+  },
+  {
+   "id": "foxit-reader",
+   "name": "Foxit Reader",
+   "cat": "Documents",
+   "desc": "Lightweight PDF reader",
+   "winget": "Foxit.FoxitReader"
+  },
+  {
+   "id": "sumatrapdf",
+   "name": "SumatraPDF",
+   "cat": "Documents",
+   "desc": "Minimal PDF reader",
+   "winget": "SumatraPDF.SumatraPDF"
+  },
+  {
+   "id": "libreoffice",
+   "name": "LibreOffice",
+   "cat": "Documents",
+   "desc": "Free office suite",
+   "winget": "TheDocumentFoundation.LibreOffice"
+  },
+  {
+   "id": "apache-openoffice",
+   "name": "Apache OpenOffice",
+   "cat": "Documents",
+   "desc": "Office suite",
+   "winget": "Apache.OpenOffice"
+  },
+  {
+   "id": "notepad",
+   "name": "Notepad++",
+   "cat": "Documents",
+   "desc": "Code and text editor",
+   "winget": "Notepad++.Notepad++"
+  },
+  {
+   "id": "calibre",
+   "name": "Calibre",
+   "cat": "Documents",
+   "desc": "E-book manager",
+   "winget": "calibre.calibre"
+  },
+  {
+   "id": "evernote",
+   "name": "Evernote",
+   "cat": "Documents",
+   "desc": "Notes",
+   "winget": "Evernote.Evernote"
+  },
+  {
+   "id": "malwarebytes",
+   "name": "Malwarebytes",
+   "cat": "Security",
+   "desc": "Malware scanner",
+   "winget": "Malwarebytes.Malwarebytes"
+  },
+  {
+   "id": "bitwarden",
+   "name": "Bitwarden",
+   "cat": "Security",
+   "desc": "Password manager",
+   "winget": "Bitwarden.Bitwarden"
+  },
+  {
+   "id": "keepassxc",
+   "name": "KeePassXC",
+   "cat": "Security",
+   "desc": "Offline password manager",
+   "winget": "KeePassXCTeam.KeePassXC"
+  },
+  {
+   "id": "keepass",
+   "name": "KeePass",
+   "cat": "Security",
+   "desc": "Classic password manager",
+   "winget": "DominikReichl.KeePass"
+  },
+  {
+   "id": "wireshark",
+   "name": "Wireshark",
+   "cat": "Security",
+   "desc": "Packet analyzer",
+   "winget": "WiresharkFoundation.Wireshark"
+  },
+  {
+   "id": "nmap",
+   "name": "Nmap",
+   "cat": "Security",
+   "desc": "Network scanner",
+   "winget": "Insecure.Nmap"
+  },
+  {
+   "id": "cloudflare-warp",
+   "name": "Cloudflare WARP",
+   "cat": "Security",
+   "desc": "Secure DNS and VPN client",
+   "winget": "Cloudflare.Warp"
+  },
+  {
+   "id": "dropbox",
+   "name": "Dropbox",
+   "cat": "Online Storage & Sync",
+   "desc": "Cloud storage",
+   "winget": "Dropbox.Dropbox"
+  },
+  {
+   "id": "google-drive",
+   "name": "Google Drive",
+   "cat": "Online Storage & Sync",
+   "desc": "Cloud storage",
+   "winget": "Google.GoogleDrive"
+  },
+  {
+   "id": "onedrive",
+   "name": "OneDrive",
+   "cat": "Online Storage & Sync",
+   "desc": "Microsoft cloud storage",
+   "winget": "Microsoft.OneDrive"
+  },
+  {
+   "id": "box-drive",
+   "name": "Box Drive",
+   "cat": "Online Storage & Sync",
+   "desc": "Cloud storage",
+   "winget": "Box.Box"
+  },
+  {
+   "id": "nextcloud",
+   "name": "Nextcloud",
+   "cat": "Online Storage & Sync",
+   "desc": "Self-hosted sync client",
+   "winget": "Nextcloud.NextcloudDesktop"
+  },
+  {
+   "id": "megasync",
+   "name": "MEGAsync",
+   "cat": "Online Storage & Sync",
+   "desc": "Cloud storage",
+   "winget": "Mega.MEGASync"
+  },
+  {
+   "id": "syncthing",
+   "name": "Syncthing",
+   "cat": "Online Storage & Sync",
+   "desc": "Peer-to-peer sync",
+   "winget": "Syncthing.Syncthing"
+  },
+  {
+   "id": "7-zip",
+   "name": "7-Zip",
+   "cat": "Compression",
+   "desc": "Archive manager",
+   "winget": "7zip.7zip"
+  },
+  {
+   "id": "winrar",
+   "name": "WinRAR",
+   "cat": "Compression",
+   "desc": "Archive manager",
+   "winget": "RARLab.WinRAR"
+  },
+  {
+   "id": "peazip",
+   "name": "PeaZip",
+   "cat": "Compression",
+   "desc": "Archive manager",
+   "winget": "Giorgiotani.Peazip"
+  },
+  {
+   "id": "java-temurin-21-jre",
+   "name": "Java (Temurin 21 JRE)",
+   "cat": "Runtimes",
+   "desc": "Java runtime",
+   "winget": "EclipseAdoptium.Temurin.21.JRE"
+  },
+  {
+   "id": "java-temurin-17-jre",
+   "name": "Java (Temurin 17 JRE)",
+   "cat": "Runtimes",
+   "desc": "Java runtime",
+   "winget": "EclipseAdoptium.Temurin.17.JRE"
+  },
+  {
+   "id": "net-desktop-runtime-8",
+   "name": ".NET Desktop Runtime 8",
+   "cat": "Runtimes",
+   "desc": ".NET apps",
+   "winget": "Microsoft.DotNet.DesktopRuntime.8"
+  },
+  {
+   "id": "net-runtime-8",
+   "name": ".NET Runtime 8",
+   "cat": "Runtimes",
+   "desc": ".NET console apps",
+   "winget": "Microsoft.DotNet.Runtime.8"
+  },
+  {
+   "id": "asp-net-core-runtime-8",
+   "name": "ASP.NET Core Runtime 8",
+   "cat": "Runtimes",
+   "desc": "Web hosting runtime",
+   "winget": "Microsoft.DotNet.AspNetCore.8"
+  },
+  {
+   "id": "vc-redistributable-2015-2022-x64",
+   "name": "VC++ Redistributable 2015-2022 x64",
+   "cat": "Runtimes",
+   "desc": "C++ runtime",
+   "winget": "Microsoft.VCRedist.2015+.x64"
+  },
+  {
+   "id": "vc-redistributable-2015-2022-x86",
+   "name": "VC++ Redistributable 2015-2022 x86",
+   "cat": "Runtimes",
+   "desc": "C++ runtime",
+   "winget": "Microsoft.VCRedist.2015+.x86"
+  },
+  {
+   "id": "webview2-runtime",
+   "name": "WebView2 Runtime",
+   "cat": "Runtimes",
+   "desc": "Embedded web content",
+   "winget": "Microsoft.EdgeWebView2Runtime"
+  },
+  {
+   "id": "python-3-12",
+   "name": "Python 3.12",
+   "cat": "Runtimes",
+   "desc": "Python runtime",
+   "winget": "Python.Python.3.12"
+  },
+  {
+   "id": "node-js-lts",
+   "name": "Node.js LTS",
+   "cat": "Runtimes",
+   "desc": "JavaScript runtime",
+   "winget": "OpenJS.NodeJS.LTS"
+  },
+  {
+   "id": "git",
+   "name": "Git",
+   "cat": "Developer Tools",
+   "desc": "Source control",
+   "winget": "Git.Git"
+  },
+  {
+   "id": "github-desktop",
+   "name": "GitHub Desktop",
+   "cat": "Developer Tools",
+   "desc": "Git GUI",
+   "winget": "GitHub.GitHubDesktop"
+  },
+  {
+   "id": "visual-studio-code",
+   "name": "Visual Studio Code",
+   "cat": "Developer Tools",
+   "desc": "Code editor",
+   "winget": "Microsoft.VisualStudioCode"
+  },
+  {
+   "id": "windows-terminal",
+   "name": "Windows Terminal",
+   "cat": "Developer Tools",
+   "desc": "Modern terminal",
+   "winget": "Microsoft.WindowsTerminal"
+  },
+  {
+   "id": "powershell-7",
+   "name": "PowerShell 7",
+   "cat": "Developer Tools",
+   "desc": "Cross-platform PowerShell",
+   "winget": "Microsoft.PowerShell"
+  },
+  {
+   "id": "postman",
+   "name": "Postman",
+   "cat": "Developer Tools",
+   "desc": "API client",
+   "winget": "Postman.Postman"
+  },
+  {
+   "id": "docker-desktop",
+   "name": "Docker Desktop",
+   "cat": "Developer Tools",
+   "desc": "Containers",
+   "winget": "Docker.DockerDesktop"
+  },
+  {
+   "id": "winmerge",
+   "name": "WinMerge",
+   "cat": "Developer Tools",
+   "desc": "Diff and merge",
+   "winget": "WinMerge.WinMerge"
+  },
+  {
+   "id": "putty",
+   "name": "PuTTY",
+   "cat": "Developer Tools",
+   "desc": "SSH and telnet client",
+   "winget": "PuTTY.PuTTY"
+  },
+  {
+   "id": "winscp",
+   "name": "WinSCP",
+   "cat": "Developer Tools",
+   "desc": "SFTP and SCP client",
+   "winget": "WinSCP.WinSCP"
+  },
+  {
+   "id": "windows-subsystem-for-linux",
+   "name": "Windows Subsystem for Linux",
+   "cat": "Developer Tools",
+   "desc": "Run Linux on Windows",
+   "winget": "Microsoft.WSL"
+  },
+  {
+   "id": "powertoys",
+   "name": "PowerToys",
+   "cat": "Utilities",
+   "desc": "Windows power tools",
+   "winget": "Microsoft.PowerToys"
+  },
+  {
+   "id": "everything",
+   "name": "Everything",
+   "cat": "Utilities",
+   "desc": "Instant file search",
+   "winget": "voidtools.Everything"
+  },
+  {
+   "id": "treesize-free",
+   "name": "TreeSize Free",
+   "cat": "Utilities",
+   "desc": "Disk usage",
+   "winget": "JAMSoftware.TreeSize.Free"
+  },
+  {
+   "id": "windirstat",
+   "name": "WinDirStat",
+   "cat": "Utilities",
+   "desc": "Disk usage",
+   "winget": "WinDirStat.WinDirStat"
+  },
+  {
+   "id": "revo-uninstaller",
+   "name": "Revo Uninstaller",
+   "cat": "Utilities",
+   "desc": "Thorough uninstaller",
+   "winget": "RevoUninstaller.RevoUninstaller"
+  },
+  {
+   "id": "bleachbit",
+   "name": "BleachBit",
+   "cat": "Utilities",
+   "desc": "Disk cleaner",
+   "winget": "BleachBit.BleachBit"
+  },
+  {
+   "id": "ditto",
+   "name": "Ditto",
+   "cat": "Utilities",
+   "desc": "Clipboard manager",
+   "winget": "Ditto.Ditto"
+  },
+  {
+   "id": "autohotkey",
+   "name": "AutoHotkey",
+   "cat": "Utilities",
+   "desc": "Automation scripting",
+   "winget": "AutoHotkey.AutoHotkey"
+  },
+  {
+   "id": "open-shell",
+   "name": "Open-Shell",
+   "cat": "Utilities",
+   "desc": "Classic Start menu",
+   "winget": "Open-Shell.Open-Shell-Menu"
+  },
+  {
+   "id": "rufus",
+   "name": "Rufus",
+   "cat": "Utilities",
+   "desc": "Bootable USB creator",
+   "winget": "Rufus.Rufus"
+  },
+  {
+   "id": "balena-etcher",
+   "name": "Balena Etcher",
+   "cat": "Utilities",
+   "desc": "Flash images to USB",
+   "winget": "Balena.Etcher"
+  },
+  {
+   "id": "ventoy",
+   "name": "Ventoy",
+   "cat": "Utilities",
+   "desc": "Multi-boot USB",
+   "winget": "Ventoy.Ventoy"
+  },
+  {
+   "id": "cpu-z",
+   "name": "CPU-Z",
+   "cat": "Hardware & Diagnostics",
+   "desc": "CPU and board info",
+   "winget": "CPUID.CPU-Z"
+  },
+  {
+   "id": "hwmonitor",
+   "name": "HWMonitor",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Temperatures and voltages",
+   "winget": "CPUID.HWMonitor"
+  },
+  {
+   "id": "hwinfo",
+   "name": "HWiNFO",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Detailed hardware info",
+   "winget": "REALiX.HWiNFO"
+  },
+  {
+   "id": "gpu-z",
+   "name": "GPU-Z",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Graphics card info",
+   "winget": "TechPowerUp.GPU-Z"
+  },
+  {
+   "id": "crystaldiskinfo",
+   "name": "CrystalDiskInfo",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Drive health",
+   "winget": "CrystalDewWorld.CrystalDiskInfo"
+  },
+  {
+   "id": "crystaldiskmark",
+   "name": "CrystalDiskMark",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Drive benchmark",
+   "winget": "CrystalDewWorld.CrystalDiskMark"
+  },
+  {
+   "id": "intel-driver-support-assistant",
+   "name": "Intel Driver & Support Assistant",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Intel driver updates",
+   "winget": "Intel.IntelDriverAndSupportAssistant"
+  },
+  {
+   "id": "dell-command-update",
+   "name": "Dell Command Update",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Dell driver updates",
+   "winget": "Dell.CommandUpdate"
+  },
+  {
+   "id": "lenovo-system-update",
+   "name": "Lenovo System Update",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Lenovo driver updates",
+   "winget": "Lenovo.SystemUpdate"
+  },
+  {
+   "id": "logitech-options",
+   "name": "Logitech Options+",
+   "cat": "Hardware & Diagnostics",
+   "desc": "Logitech devices",
+   "winget": "Logitech.OptionsPlus"
+  },
+  {
+   "id": "anydesk",
+   "name": "AnyDesk",
+   "cat": "Remote Support",
+   "desc": "Remote desktop",
+   "winget": "AnyDesk.AnyDesk"
+  },
+  {
+   "id": "teamviewer",
+   "name": "TeamViewer",
+   "cat": "Remote Support",
+   "desc": "Remote desktop",
+   "winget": "TeamViewer.TeamViewer"
+  },
+  {
+   "id": "microsoft-remote-desktop",
+   "name": "Microsoft Remote Desktop",
+   "cat": "Remote Support",
+   "desc": "RDP client",
+   "winget": "Microsoft.RemoteDesktopClient"
+  },
+  {
+   "id": "mremoteng",
+   "name": "mRemoteNG",
+   "cat": "Remote Support",
+   "desc": "Multi-protocol remote manager",
+   "winget": "mRemoteNG.mRemoteNG"
+  },
+  {
+   "id": "tailscale",
+   "name": "Tailscale",
+   "cat": "Remote Support",
+   "desc": "Mesh VPN",
+   "winget": "Tailscale.Tailscale"
+  },
+  {
+   "id": "zerotier",
+   "name": "ZeroTier",
+   "cat": "Remote Support",
+   "desc": "Virtual network",
+   "winget": "ZeroTier.ZeroTierOne"
+  },
+  {
+   "id": "wireguard",
+   "name": "WireGuard",
+   "cat": "Remote Support",
+   "desc": "VPN",
+   "winget": "WireGuard.WireGuard"
+  },
+  {
+   "id": "openvpn",
+   "name": "OpenVPN",
+   "cat": "Remote Support",
+   "desc": "VPN client",
+   "winget": "OpenVPNTechnologies.OpenVPN"
+  },
+  {
+   "id": "advanced-ip-scanner",
+   "name": "Advanced IP Scanner",
+   "cat": "Network Tools",
+   "desc": "LAN scanner",
+   "winget": "Famatech.AdvancedIPScanner"
+  },
+  {
+   "id": "angry-ip-scanner",
+   "name": "Angry IP Scanner",
+   "cat": "Network Tools",
+   "desc": "Fast IP scanner",
+   "winget": "angryziber.AngryIPScanner"
+  },
+  {
+   "id": "fing",
+   "name": "Fing",
+   "cat": "Network Tools",
+   "desc": "Network discovery",
+   "winget": "Fing.Fing"
+  },
+  {
+   "id": "windows-admin-center",
+   "name": "Windows Admin Center",
+   "cat": "Server & Admin",
+   "desc": "Browser-based server admin",
+   "winget": "Microsoft.WindowsAdminCenter"
+  },
+  {
+   "id": "sql-server-management-studio",
+   "name": "SQL Server Management Studio",
+   "cat": "Server & Admin",
+   "desc": "SQL admin",
+   "winget": "Microsoft.SQLServerManagementStudio"
+  },
+  {
+   "id": "azure-cli",
+   "name": "Azure CLI",
+   "cat": "Server & Admin",
+   "desc": "Azure command line",
+   "winget": "Microsoft.AzureCLI"
+  },
+  {
+   "id": "azure-storage-explorer",
+   "name": "Azure Storage Explorer",
+   "cat": "Server & Admin",
+   "desc": "Azure storage browser",
+   "winget": "Microsoft.Azure.StorageExplorer"
+  },
+  {
+   "id": "virtualbox",
+   "name": "VirtualBox",
+   "cat": "Server & Admin",
+   "desc": "Virtualization",
+   "winget": "Oracle.VirtualBox"
+  },
+  {
+   "id": "sysinternals-suite",
+   "name": "Sysinternals Suite",
+   "cat": "Server & Admin",
+   "desc": "Microsoft diagnostics tools",
+   "winget": "Microsoft.Sysinternals.Suite"
+  },
+  {
+   "id": "rclone",
+   "name": "Rclone",
+   "cat": "Server & Admin",
+   "desc": "Cloud file sync CLI",
+   "winget": "Rclone.Rclone"
+  },
+  {
+   "id": "duplicati",
+   "name": "Duplicati",
+   "cat": "Server & Admin",
+   "desc": "Encrypted backups",
+   "winget": "Duplicati.Duplicati"
+  },
+  {
+   "id": "steam",
+   "name": "Steam",
+   "cat": "Gaming",
+   "desc": "Game store",
+   "winget": "Valve.Steam"
+  },
+  {
+   "id": "epic-games-launcher",
+   "name": "Epic Games Launcher",
+   "cat": "Gaming",
+   "desc": "Game store",
+   "winget": "EpicGames.EpicGamesLauncher"
+  },
+  {
+   "id": "gog-galaxy",
+   "name": "GOG Galaxy",
+   "cat": "Gaming",
+   "desc": "Game library",
+   "winget": "GOG.Galaxy"
+  },
+  {
+   "id": "microsoft-365-apps",
+   "name": "Microsoft 365 Apps",
+   "cat": "Microsoft 365",
+   "desc": "Word, Excel, Outlook and more",
+   "winget": "Microsoft.Office"
+  }
+ ],
+ "bundles": [
+  {
+   "id": "new-workstation",
+   "name": "New Workstation",
+   "desc": "Everyday office PC baseline",
+   "apps": [
+    "chrome",
+    "firefox",
+    "adobe-reader",
+    "7-zip",
+    "vlc",
+    "zoom",
+    "microsoft-teams",
+    "notepad",
+    "libreoffice",
+    "vc-redistributable-2015-2022-x64",
+    "vc-redistributable-2015-2022-x86",
+    "java-temurin-21-jre",
+    "net-desktop-runtime-8",
+    "webview2-runtime"
+   ]
+  },
+  {
+   "id": "new-server",
+   "name": "New Server",
+   "desc": "Admin essentials for Windows Server",
+   "apps": [
+    "7-zip",
+    "notepad",
+    "powershell-7",
+    "windows-terminal",
+    "sysinternals-suite",
+    "putty",
+    "winscp",
+    "wireshark",
+    "windows-admin-center",
+    "vc-redistributable-2015-2022-x64",
+    "net-runtime-8",
+    "webview2-runtime",
+    "chrome",
+    "treesize-free"
+   ]
+  },
+  {
+   "id": "tech-toolkit",
+   "name": "MSP Tech Toolkit",
+   "desc": "Everything a tech needs on a USB-less job",
+   "apps": [
+    "anydesk",
+    "teamviewer",
+    "putty",
+    "winscp",
+    "advanced-ip-scanner",
+    "angry-ip-scanner",
+    "wireshark",
+    "nmap",
+    "sysinternals-suite",
+    "crystaldiskinfo",
+    "crystaldiskmark",
+    "hwinfo",
+    "cpu-z",
+    "rufus",
+    "ventoy",
+    "balena-etcher",
+    "everything",
+    "windirstat",
+    "7-zip",
+    "notepad",
+    "bitwarden",
+    "tailscale"
+   ]
+  },
+  {
+   "id": "developer",
+   "name": "Developer",
+   "desc": "Coding workstation",
+   "apps": [
+    "git",
+    "github-desktop",
+    "visual-studio-code",
+    "windows-terminal",
+    "powershell-7",
+    "python-3-12",
+    "node-js-lts",
+    "postman",
+    "docker-desktop",
+    "winmerge",
+    "windows-subsystem-for-linux",
+    "putty",
+    "notepad"
+   ]
+  },
+  {
+   "id": "home",
+   "name": "Home PC",
+   "desc": "Browsing, media and chat",
+   "apps": [
+    "chrome",
+    "firefox",
+    "vlc",
+    "spotify",
+    "discord",
+    "zoom",
+    "adobe-reader",
+    "7-zip",
+    "libreoffice",
+    "steam",
+    "malwarebytes",
+    "bitwarden"
+   ]
+  }
+ ]
+}
