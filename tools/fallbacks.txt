@@ -1,0 +1,23 @@
+# id|kind(msi|exe)|url|silent args
+# Direct-download fallback used when winget fails. URLs must be evergreen vendor links.
+chrome|msi|https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi|
+firefox|msi|https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en-US|
+thunderbird|msi|https://download.mozilla.org/?product=thunderbird-msi-latest-ssl&os=win64&lang=en-US|
+microsoft-edge|msi|https://go.microsoft.com/fwlink/?linkid=2093437|
+zoom|msi|https://zoom.us/client/latest/ZoomInstallerFull.msi?archType=x64|
+tailscale|msi|https://pkgs.tailscale.com/stable/tailscale-setup-latest-amd64.msi|
+java-temurin-21-jre|msi|https://api.adoptium.net/v3/installer/latest/21/ga/windows/x64/jre/hotspot/normal/eclipse|
+java-temurin-17-jre|msi|https://api.adoptium.net/v3/installer/latest/17/ga/windows/x64/jre/hotspot/normal/eclipse|
+vc-redistributable-2015-2022-x64|exe|https://aka.ms/vs/17/release/vc_redist.x64.exe|/install /quiet /norestart
+vc-redistributable-2015-2022-x86|exe|https://aka.ms/vs/17/release/vc_redist.x86.exe|/install /quiet /norestart
+net-desktop-runtime-8|exe|https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe|/install /quiet /norestart
+net-runtime-8|exe|https://aka.ms/dotnet/8.0/dotnet-runtime-win-x64.exe|/install /quiet /norestart
+asp-net-core-runtime-8|exe|https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x64.exe|/install /quiet /norestart
+webview2-runtime|exe|https://go.microsoft.com/fwlink/p/?LinkId=2124703|/silent /install
+visual-studio-code|exe|https://code.visualstudio.com/sha/download?build=stable&os=win32-x64|/VERYSILENT /NORESTART /MERGETASKS=!runcode
+docker-desktop|exe|https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe|install --quiet --accept-license
+steam|exe|https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe|/S
+teamviewer|exe|https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe|/S
+google-drive|exe|https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe|--silent --desktop_shortcut
+bitwarden|exe|https://vault.bitwarden.com/download/?app=desktop&platform=windows|/S
+brave|exe|https://laptop-updates.brave.com/latest/winx64|/silent /install

@@ -22,6 +22,7 @@ type app struct {
 	Name   string `json:"name"`
 	Winget string `json:"winget"`
 	URL    string `json:"url,omitempty"`
+	Kind   string `json:"kind,omitempty"`
 	Args   string `json:"args,omitempty"`
 }
 

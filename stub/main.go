@@ -28,6 +28,7 @@ type app struct {
 	Name   string `json:"name"`
 	Winget string `json:"winget"`
 	URL    string `json:"url"`
+	Kind   string `json:"kind,omitempty"`
 	Args   string `json:"args"`
 }
 
@@ -150,7 +151,10 @@ func direct(a app) error {
 	if resp.StatusCode != 200 {
 		return fmt.Errorf("download HTTP %d", resp.StatusCode)
 	}
-	ext := strings.ToLower(filepath.Ext(strings.SplitN(a.URL, "?", 2)[0]))
+	ext := ".exe"
+	if a.Kind == "msi" {
+		ext = ".msi"
+	}
 	tmp := filepath.Join(os.TempDir(), "appgrabber-"+a.ID+ext)
 	out, err := os.Create(tmp)
 	if err != nil {
@@ -162,12 +166,19 @@ func direct(a app) error {
 		return err
 	}
 	defer os.Remove(tmp)
+	var code int
 	if ext == ".msi" {
-		_, err = run("msiexec", "/i", tmp, "/qn", "/norestart")
-		return err
+		code, err = run("msiexec", append([]string{"/i", tmp, "/qn", "/norestart"}, strings.Fields(a.Args)...)...)
+	} else {
+		code, err = run(tmp, strings.Fields(a.Args)...)
 	}
-	_, err = run(tmp, strings.Fields(a.Args)...)
-	return err
+	if code == 3010 || code == 1641 { // success, reboot required
+		return nil
+	}
+	if err != nil {
+		return fmt.Errorf("installer exit %d", code)
+	}
+	return nil
 }
 
 func main() {
@@ -191,6 +202,9 @@ func main() {
 
 	say("Installing %d app(s). Log: %s", len(p.Apps), logf.Name())
 	winget := hasWinget()
+	if winget {
+		run("winget", "source", "update", "--name", "winget", "--disable-interactivity")
+	}
 	if !winget {
 		say("winget not found; using direct downloads where available.")
 	}
@@ -201,10 +215,20 @@ func main() {
 		var err error
 		switch {
 		case winget && a.Winget != "":
-			code, e := run("winget", "install", "--id", a.Winget, "-e", "--silent",
-				"--accept-package-agreements", "--accept-source-agreements", "--disable-interactivity")
+			args := []string{"install", "--id", a.Winget, "-e", "--source", "winget", "--silent",
+				"--accept-package-agreements", "--accept-source-agreements", "--disable-interactivity"}
+			code, _ := run("winget", args...)
 			if !wingetOK(code) {
-				err = fmt.Errorf("winget exit %d (%v)", code, e)
+				// refresh sources once and retry before giving up
+				run("winget", "source", "update", "--name", "winget", "--disable-interactivity")
+				code, _ = run("winget", args...)
+			}
+			if !wingetOK(code) {
+				err = fmt.Errorf("winget exit 0x%08X", uint32(code))
+				if a.URL != "" {
+					say("%s: winget failed (%v), trying direct download...", prefix, err)
+					err = direct(a)
+				}
 			}
 		case a.URL != "":
 			err = direct(a)

@@ -12,6 +12,18 @@ for line in open('tools/catalog.txt', encoding='utf-8'):
         cats.append(cat)
     slug = re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
     apps.append({'id': slug, 'name': name, 'cat': cat, 'desc': desc, 'winget': wid})
+fb = {}
+for line in open('tools/fallbacks.txt', encoding='utf-8'):
+    line = line.strip()
+    if not line or line.startswith('#'):
+        continue
+    i, kind, url, args = line.split('|', 3)
+    fb[i] = (kind, url, args)
+for a in apps:
+    if a['id'] in fb:
+        a['kind'], a['url'], a['args'] = fb[a['id']]
+        if not a['args']:
+            del a['args']
 ids = {a['id'] for a in apps}
 bundles = [
  {'id': 'new-workstation', 'name': 'New Workstation', 'desc': 'Everyday office PC baseline',
